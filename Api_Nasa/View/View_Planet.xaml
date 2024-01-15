@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Api_Nasa.View.View_Planet"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Api_Nasa.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <!-- ******************************************** Fond d'écran ******************************************** -->
+
+        <Image Source="\Ressource\Image\ISS_Fond_S.jpg" Stretch="Fill"/>
+
+        <!-- ******************************************** Construction de la grille ******************************************** -->
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+               
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- ******************************************** Latitude / Longitude / Nombre de personnes dans l'ISS ******************************************** -->
+
+            <Label x:Name="LBL_Latitude" Grid.Row="0" Grid.Column="0" Content="Latitude ISS : " HorizontalAlignment="Left" Foreground="White" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Margin="0,37,0,0"/>
+            <Label x:Name="LBL_Longitude" Grid.Row="0" Grid.Column="0" Content="Longitude ISS : " HorizontalAlignment="Left" Foreground="White" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+            <Label x:Name="LBL_NB_Personne" Grid.Row="0" Grid.Column="0" Content="Nombre de personnes dans l'ISS : " HorizontalAlignment="Left" Foreground="White" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Margin="0,74,0,0"/>
+
+            <!-- ******************************************** Equipage ******************************************** -->
+
+            <Label x:Name="LBL_Perso1" Grid.Row="0" Grid.Column="1" Content="Equipier 1 : " HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" Margin="0,0,0,200"/>
+            <Label x:Name="LBL_Perso2" Grid.Row="0" Grid.Column="1" Content="Equipier 2 : " HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" Margin="0,0,0,160"/>
+            <Label x:Name="LBL_Perso3" Grid.Row="0" Grid.Column="1" Content="Equipier 3 : " HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" Margin="0,0,0,120"/>
+            <Label x:Name="LBL_Perso4" Grid.Row="0" Grid.Column="1" Content="Equipier 4 : " HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" Margin="0,0,0,80"/>
+            <Label x:Name="LBL_Perso5" Grid.Row="0" Grid.Column="1" Content="Equipier 5 : " HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" Margin="0,0,0,40"/>
+            <Label x:Name="LBL_Perso6" Grid.Row="0" Grid.Column="1" Content="Equipier 6 : " HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" Margin="0,0,0,0"/>
+
+            <!-- ******************************************** Bouton Live et la description au dessus ******************************************** -->
+
+            <Label x:Name="LBL_Intro_ISS" Grid.Row="1" Grid.Column="0" Content="Live NASA de la vue de la Terre depuis l'ISS : " HorizontalAlignment="Left" Foreground="White" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold" Margin="0,0,0,61"/>
+            <Button x:Name="BTN_Video_ISS" Grid.Row="1" Content="Vidéo en directe de la vue de l'ISS sur le globe !" HorizontalAlignment="Left" FontSize="20" VerticalAlignment="Bottom" Width="461" Height="50" Click="BTN_Video_ISS_Click" Margin="5,0,0,10" RenderTransformOrigin="0.322,0.46" Grid.ColumnSpan="2" Style="{StaticResource BleuStyle}"/>
+        </Grid>
+    </Grid>
+</UserControl>
