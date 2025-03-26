@@ -4,10 +4,10 @@ Une application développée en C# avec .NET WPF permettant d'afficher des donn�
 
 ## 🌌 Fonctionnalités  
 
-- 📡 Affichage en temps réel de la position de l'ISS  
-- 🔭 Exploration de Mars avec les images des rovers de la NASA  
-- 📅 Accès aux événements spatiaux et aux prochaines missions  
-- 📊 Données météorologiques et atmosphériques des planètes  
+- 📡 Affichage en temps réel de la position de l'ISS et des différentes informations la concernant (équipage)
+- 🔭 Exploration de Mars avec les images des rovers de la NASA en fonction de la date choisis
+- 📅 Accès aux événements spatiaux et aux prochaines mission
+- 📊 Possibilité d'accéder aux photos prise par Hubble pour connaitre la photo prise le jour de votre anniversaire
 
 ## 🛠 Technologies utilisées  
 
